@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyFunds</title>
+</head>
+    <form method="post" action="{% url 'mutualfund' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+  	<label for="ISIN">ISIN :</label>
+  	<input type="text" id="ISIN" name="ISIN"><br><br>
+  	<input type="submit" value="Submit">
+</form>
+<body>
+
+</body>
+</html>

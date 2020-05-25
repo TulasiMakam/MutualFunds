@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+.aligncenter {
+    text-align: center;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <h3>Name of Mutual Fund: {{ ISIN }}</h3>
+    <h3>ISIN of Mutual Fund: {{ mutual_funds_name }}</h3>
+    </head>
+<body>
+<form method="post" action="{% url 'mutualfund' %}"> {% csrf_token %}
+    <p class="aligncenter">
+        {% load static %}
+<img src="{% static 'ISINapp/img.png' %}" alt=""/>
+    </p>
+</form>
+</body>
+</html>
