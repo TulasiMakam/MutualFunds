@@ -6,7 +6,7 @@ celery==3.1.26.post2
 certifi==2020.4.5.1
 chardet==3.0.4
 cycler==0.10.0
-Django==3.0.6
+Django==3.0.7
 django-celery==3.3.1
 heroku==0.1.4
 idna==2.9
